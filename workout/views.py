@@ -14,4 +14,5 @@ from django.contrib.auth.hashers import make_password  # This is to allow encryp
 # Create your views here.
 
 def index(request):
-	return render(request, 'workout/index.html')
+	context_dict = {'bold_message': 'Arnold works out here'}
+	return render(request, 'workout/index.html', context_dict)
