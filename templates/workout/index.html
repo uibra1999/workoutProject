@@ -1,3 +1,34 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 
-<p> The online mecca of iron {{ bold_message }}</p>
+<html style="height: 1000px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static "bootrstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{% static "bootstrap/css/styles.css" %}">
+</head>
+
+<title>Home</title>
+
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(163,163,163);">Workout</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(163,163,163);">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: rgb(163,163,163);">Register</a></li>
+    </ul>
+    <div class="text-center text-black-50 rubberBand animated"></div><img class="rubberBand animated" style="width: 100%;height: 500px;filter: blur(0px) brightness(100%) grayscale(0%) saturate(96%);" src="{% static "img/Arnold-Schwarzenegger-Bodybuilder-Olympia-Universe-Conquer-Classical-Sport-Poster-Home-Deco-32-inch-x-24-inch.jpg" %}"><footer id="footer">
+    
+    <div style= "background: grey; text-align: center; margin: 0px; padding:10px">
+        <p style= "color:white; font-family: raleway">Copyright (c) 2020</p>
+    </div>
+</footer>
+    <script src="{% static "js/jquery.min.js" %}"></script>
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+</body>
+
+</html>
