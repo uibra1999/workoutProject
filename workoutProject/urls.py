@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('workout/', include('workout.urls')),
     path('admin/', admin.site.urls),
+    path('index.html', views.index, name='index'),
 ]
